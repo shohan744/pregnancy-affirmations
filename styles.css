@@ -57,3 +57,26 @@ footer {
 footer:hover {
     background-color: #007acc; /* Change to a lighter blue on hover */
 }
+
+/* Style for the "Re-roll" button */
+#reRollButton {
+    background-color: #007acc; /* Dark blue */
+    color: #fff; /* White text color */
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+/* Hover effect for the button */
+#reRollButton:hover {
+    background-color: #005180; /* Slightly darker blue on hover */
+}
+
+/* Style for the heart symbol */
+#reRollButton span {
+    font-size: 18px;
+    margin-left: 5px;
