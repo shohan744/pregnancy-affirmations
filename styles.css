@@ -1,0 +1,59 @@
+/* styles.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #e6f7ff; /* Light blue */
+    color: #333;
+    text-align: center;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+h1 {
+    color: #007acc; /* Dark blue */
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+/* Add a subtle box shadow to the affirmation container */
+#affirmation {
+    padding: 15px;
+    background-color: #fff; /* White background for the affirmation container */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle box shadow */
+}
+
+/* Add hover effect to the affirmation container */
+#affirmation:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Add some margin to the bottom of the page */
+body {
+    margin-bottom: 20px;
+}
+
+/* Add a footer with a different shade of blue */
+footer {
+    background-color: #005180; /* Darker blue for the footer */
+    padding: 10px;
+    color: #fff; /* White text color */
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Add hover effect to the footer */
+footer:hover {
+    background-color: #007acc; /* Change to a lighter blue on hover */
+}
