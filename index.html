@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pregnancy Affirmations</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #e6f7ff; /* Light blue */
+            color: #333;
+            text-align: center;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        h1 {
+            color: #007acc; /* Dark blue */
+        }
+
+        p {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Pregnancy Affirmations</h1>
+    <p id="affirmation"></p>
+
+    <script>
+        // List of affirmations
+        const affirmations = [
+            "My baby is safe and loved."
+            "My baby knows all is well."
+            "I trust my body to know what to do."
+            "My body is amazing just the way it is."
+            "I accept myself the way I am."
+            "I am capable of amazing things."
+            "I am on a journey, growing and developing."
+            "I am resilient, strong, and brave."
+            "I'm fine with who I am, and I love who I'm becoming."
+            "I got this!"
+            "Breathe!"
+            "I welcome my baby with love."
+            "My baby is healthy and happy."
+            "I know I can do this."
+            "I trust my instincts."
+            "I am grateful."
+            "Our home is filled with love and kindness."
+            "One step at a time."
+            "I will make the most of today.
+            "My life is taking place right here, right now."
+            "How I spend my days is how I spend my life."
+            "It's okay to ask for and accept help."
+            "Everything is going to be okay."
+            "Frustration can be my greatest teacher."
+            "Tomorrow is another day."
+            "This too shall pass."
+            "I'm doing the best I can."
+            "I choose to be calm."
+            "Every experience I have helps me grow."
+            "I am in charge of how I live each day."
+            "Happiness is a choice. I choose to be happy."
+            "Nobody but me decides how I feel."
+            "I am at peace with what has happened, is happening, and will happen."
+            "I have all that I need."
+            "I believe in who I am."
+            "Everything is as it should be."
+            "I am in charge of my thoughts, and I don't judge myself."
+            "I am responsible for looking after me."
+            "By being myself, I bring happiness to other people."
+            "I make positive changes in the world."
+            "I choose to surround myself with love."
+            "When I fall down, I get back up again."
+            "Each day I am growing stronger."
+            "I trust my intuition."
+            "I am brave and courageous."
+            "I am loved."
+            "All is well."
+            "I wake up today with strength in my heart and clarity in my mind."
+            "Today I will let go of the guilt weighing on my shoulders."
+            "Today I will love fiercely, laugh freely, and live courageously."
+        ];
+
+        // Function to display a random affirmation
+        function displayRandomAffirmation() {
+            const randomIndex = Math.floor(Math.random() * affirmations.length);
+            const affirmationElement = document.getElementById('affirmation');
+            affirmationElement.textContent = affirmations[randomIndex];
+        }
+
+        // Display a random affirmation on page load
+        displayRandomAffirmation();
+    </script>
+</body>
+</html>
