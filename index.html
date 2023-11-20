@@ -3,42 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pregnancy Affirmations</title>
     <link rel="stylesheet" href="styles.css">
-    <title>Pregnancy Affirmations.</title>
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            background-color: #e6f7ff; /* Light blue */
-            color: #333;
-            text-align: center;
-            margin: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-        }
-
-        h1 {
-            color: #007acc; /* Dark blue */
-        }
-
-        p {
-            font-size: 18px;
-            margin: 10px 0;
-        }
-    </style>
 </head>
 <body>
-    <h1>Close your eyes, and breathe.</h1>
+    <h1>Pregnancy Affirmations</h1>
     <p id="affirmation"></p>
     
-    <button id="reRollButton" onclick="displayRandomAffirmation()">
+    <button id="reRollButton" onclick="handleAffirmationButtonClick()">
         <span>&#10084;</span>
     </button>
-    
+
+    <button id="affirmationButton" onclick="handleAffirmationButtonClick()">
+        I said my affirmation!
+    </button>
+
     <script>
-        // List of affirmations
         const affirmations = [
             "My baby is safe and loved.",
             "My baby knows all is well.",
@@ -92,15 +72,43 @@
             "Today I will love fiercely, laugh freely, and live courageously."
         ];
 
-        // Function to display a random affirmation
+        const backgroundImages = [
+            'background1.png',
+            'background2.png',
+            'background3.png'
+        ];
+
+        let affirmationCounter = 0;
+
         function displayRandomAffirmation() {
             const randomIndex = Math.floor(Math.random() * affirmations.length);
             const affirmationElement = document.getElementById('affirmation');
             affirmationElement.textContent = affirmations[randomIndex];
+
+            // Change the background image
+            const bodyElement = document.body;
+            const randomImageIndex = Math.floor(Math.random() * backgroundImages.length);
+            bodyElement.style.backgroundImage = `url('images/${backgroundImages[randomImageIndex]}')`;
         }
 
-        // Display a random affirmation on page load
+        function handleAffirmationButtonClick() {
+            affirmationCounter++;
+
+            if (affirmationCounter >= 5) {
+                playRewardAnimation();
+                affirmationCounter = 0; // Reset the counter after the reward
+            }
+
+            displayRandomAffirmation();
+        }
+
+        function playRewardAnimation() {
+            // Add your animation logic here
+            alert("Congratulations! You've completed 5 affirmations. Enjoy your reward!");
+        }
+
         displayRandomAffirmation();
     </script>
 </body>
 </html>
+
