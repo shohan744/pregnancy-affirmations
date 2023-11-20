@@ -16,11 +16,21 @@ h1 {
     color: #007acc; /* Dark blue */
     font-size: 2em;
     margin-bottom: 10px;
+    text-align: center; /* Center the text */
 }
 
-p {
+#affirmationContainer {
+    background-color: #f2f2f2; /* Light gray background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle box shadow */
+    margin-bottom: 20px;
+}
+
+p#affirmation {
     font-size: 18px;
-    margin: 10px 0;
+    margin: 0; /* Remove default margin */
+    text-align: center;
 }
 
 .button-container {
@@ -45,18 +55,4 @@ button:hover {
 #reRollButton span {
     font-size: 18px;
     margin-left: 5px;
-}
-
-#affirmationContainer {
-    background-color: #f2f2f2; /* Light gray background */
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle box shadow */
-    margin-bottom: 20px;
-}
-
-p#affirmation {
-    font-size: 18px;
-    margin: 0; /* Remove default margin */
-    text-align: center;
 }
