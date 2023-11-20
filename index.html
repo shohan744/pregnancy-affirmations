@@ -10,13 +10,15 @@
     <h1>Pregnancy Affirmations</h1>
     <p id="affirmation"></p>
     
-    <button id="reRollButton" onclick="handleAffirmationButtonClick()">
-        <span>&#10084;</span>
-    </button>
+    <div class="button-container">
+        <button id="reRollButton" onclick="handleReRollButtonClick()">
+            <span>&#10084;</span>
+        </button>
 
-    <button id="affirmationButton" onclick="handleAffirmationButtonClick()">
-        I said my affirmation!
-    </button>
+        <button id="affirmationButton" onclick="handleAffirmationButtonClick()">
+            I said my affirmation!
+        </button>
+    </div>
 
     <script>
         const affirmations = [
@@ -91,6 +93,11 @@
             bodyElement.style.backgroundImage = `url('images/${backgroundImages[randomImageIndex]}')`;
         }
 
+        function handleReRollButtonClick() {
+            // Reroll without affecting the affirmation counter
+            displayRandomAffirmation();
+        }
+
         function handleAffirmationButtonClick() {
             affirmationCounter++;
 
@@ -98,17 +105,14 @@
                 playRewardAnimation();
                 affirmationCounter = 0; // Reset the counter after the reward
             }
-
-            displayRandomAffirmation();
         }
 
         function playRewardAnimation() {
             // Add your animation logic here
-            alert("Nice, you did it. It feels silly, but it works.");
+            alert("Nice! It may seem silly, but it helps.");
         }
 
         displayRandomAffirmation();
     </script>
 </body>
 </html>
-
