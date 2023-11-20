@@ -2,9 +2,8 @@
 
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #e6f7ff; /* Light blue */
-    color: #333;
-    text-align: center;
+    background-size: cover;
+    background-position: center;
     margin: 0;
     display: flex;
     flex-direction: column;
@@ -24,42 +23,11 @@ p {
     margin: 10px 0;
 }
 
-/* Add a subtle box shadow to the affirmation container */
-#affirmation {
-    padding: 15px;
-    background-color: #fff; /* White background for the affirmation container */
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle box shadow */
+.button-container {
+    margin-top: 20px;
 }
 
-/* Add hover effect to the affirmation container */
-#affirmation:hover {
-    transform: scale(1.05);
-    transition: transform 0.3s ease-in-out;
-}
-
-/* Add some margin to the bottom of the page */
-body {
-    margin-bottom: 20px;
-}
-
-/* Add a footer with a different shade of blue */
-footer {
-    background-color: #005180; /* Darker blue for the footer */
-    padding: 10px;
-    color: #fff; /* White text color */
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
-
-/* Add hover effect to the footer */
-footer:hover {
-    background-color: #007acc; /* Change to a lighter blue on hover */
-}
-
-/* Style for the "Re-roll" button */
-#reRollButton {
+button {
     background-color: #007acc; /* Dark blue */
     color: #fff; /* White text color */
     font-size: 16px;
@@ -67,16 +35,14 @@ footer:hover {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    margin-top: 20px;
-    transition: background-color 0.3s ease-in-out;
+    margin: 5px; /* Add some margin between buttons */
 }
 
-/* Hover effect for the button */
-#reRollButton:hover {
+button:hover {
     background-color: #005180; /* Slightly darker blue on hover */
 }
 
-/* Style for the heart symbol */
 #reRollButton span {
     font-size: 18px;
     margin-left: 5px;
+}
