@@ -8,11 +8,11 @@
 </head>
 <body>
     <h1>Close your eyes, and breathe.</h1>
-    
+
     <div id="affirmationContainer">
-    <p id="affirmation"></p>
-</div>
-    
+        <p id="affirmation"></p>
+    </div>
+
     <div class="button-container">
         <button id="reRollButton" onclick="handleReRollButtonClick()">
             <span>&#10084;</span>
@@ -83,6 +83,15 @@
             'background 3.jpg'
         ];
 
+        const bibleVerses = [
+            "Children are a heritage from the Lord, offspring a reward from him. - Psalm 127:3",
+            "Before I formed you in the womb I knew you, before you were born I set you apart. - Jeremiah 1:5",
+            "And the child grew and became strong in spirit, filled with wisdom. And the favor of God was upon him. - Luke 2:40",
+            "For this child I prayed, and the Lord has granted me my petition that I made to him. - 1 Samuel 1:27",
+            "Behold, children are a heritage from the Lord, the fruit of the womb a reward." - Psalm 127:3"
+            // Add more verses as needed
+        ];
+
         let affirmationCounter = 0;
 
         function displayRandomAffirmation() {
@@ -117,5 +126,19 @@
 
         displayRandomAffirmation();
     </script>
+
+    <!-- Divider -->
+    <hr class="divider">
+
+    <!-- Bible Verse Container -->
+    <div id="bibleVerseContainer">
+        <p id="bibleVerse"></p>
+    </div>
+
+    <div class="button-container">
+        <button id="bibleVerseButton" onclick="displayRandomBibleVerse()">
+            Display Random Bible Verse
+        </button>
+    </div>
 </body>
 </html>
