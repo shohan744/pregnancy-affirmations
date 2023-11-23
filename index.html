@@ -13,12 +13,7 @@
         <p id="affirmation"></p>
     </div>
 
-    <!-- Bible Verse Container -->
-    <div id="bibleVerseContainer">
-        <p id="bibleVerse"></p>
-    </div>
-
-    <div class="button-container">
+	    <div class="button-container">
         <button id="reRollButton" onclick="handleReRollButtonClick()">
             Another Affirmation <span>&#10084;</span>
         </button>
@@ -26,6 +21,14 @@
         <button id="affirmationButton" onclick="handleAffirmationButtonClick()">
             I said my affirmation!
         </button>
+	
+	    <!-- Divider -->
+    <hr class="divider">
+
+    <!-- Bible Verse Container -->
+    <div id="bibleVerseContainer">
+        <p id="bibleVerse"></p>
+    </div>
 
         <button id="bibleVerseButton" onclick="displayRandomBibleVerse()">
             More Verses for Parents
@@ -143,7 +146,6 @@
     bodyElement.style.backgroundImage = `url('images/${backgroundImages[randomImageIndex]}')`;
 </script>
 
-    <!-- Divider -->
-    <hr class="divider">
+
 </body>
 </html>
