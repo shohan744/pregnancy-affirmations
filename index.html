@@ -13,6 +13,11 @@
         <p id="affirmation"></p>
     </div>
 
+    <!-- Bible Verse Container -->
+    <div id="bibleVerseContainer">
+        <p id="bibleVerse"></p>
+    </div>
+
     <div class="button-container">
         <button id="reRollButton" onclick="handleReRollButtonClick()">
             <span>&#10084;</span>
@@ -21,11 +26,15 @@
         <button id="affirmationButton" onclick="handleAffirmationButtonClick()">
             I said my affirmation!
         </button>
+
+        <button id="bibleVerseButton" onclick="displayRandomBibleVerse()">
+            More Verses
+        </button>
     </div>
 
     <script>
         const affirmations = [
-            "My baby is safe and loved.",
+		"My baby is safe and loved.",
             "My baby knows all is well.",
             "I trust my body to know what to do.",
             "My body is amazing just the way it is.",
@@ -83,68 +92,53 @@
             'background 3.jpg'
         ];
 
-const bibleVerses = [
+        const bibleVerses = [
     "Children are a heritage from the Lord, offspring a reward from him. - Psalm 127:3",
     "Before I formed you in the womb I knew you, before you were born I set you apart. - Jeremiah 1:5",
     "And the child grew and became strong in spirit, filled with wisdom. And the favor of God was upon him. - Luke 2:40",
     "For this child I prayed, and the Lord has granted me my petition that I made to him. - 1 Samuel 1:27",
     "Behold, children are a heritage from the Lord, the fruit of the womb a reward. - Psalm 127:3"
-    // Add more verses as needed
-];
+        ];
 
-    let affirmationCounter = 0;
+        let affirmationCounter = 0;
 
-    function displayRandomAffirmation() {
-        // Existing code for displaying random affirmations...
-    }
-
-    function handleReRollButtonClick() {
-        // Reroll without affecting the affirmation counter
-        displayRandomAffirmation();
-    }
-
-    function handleAffirmationButtonClick() {
-        affirmationCounter++;
-
-        if (affirmationCounter >= 5) {
-            playRewardAnimation();
-            affirmationCounter = 0; // Reset the counter after the reward
+        function displayRandomAffirmation() {
+            const randomIndex = Math.floor(Math.random() * affirmations.length);
+            const affirmationElement = document.getElementById('affirmation');
+            affirmationElement.textContent = affirmations[randomIndex];
         }
-    }
 
-    function playRewardAnimation() {
-        // Add your animation logic here
-        alert("Nice! It may seem silly, but it helps.");
-    }
+        function handleReRollButtonClick() {
+            // Reroll without affecting the affirmation counter
+            displayRandomAffirmation();
+        }
 
-   function displayRandomAffirmation() {
-    const randomIndex = Math.floor(Math.random() * affirmations.length);
-    const affirmationElement = document.getElementById('affirmation');
-    affirmationElement.textContent = affirmations[randomIndex];
+        function handleAffirmationButtonClick() {
+            affirmationCounter++;
 
-    // Change the background image
-    const bodyElement = document.body;
-    const randomImageIndex = Math.floor(Math.random() * backgroundImages.length);
-    bodyElement.style.backgroundImage = `url('images/${backgroundImages[randomImageIndex]}')`;
-}
+            if (affirmationCounter >= 5) {
+                playRewardAnimation();
+                affirmationCounter = 0; // Reset the counter after the reward
+            }
+        }
 
-    // Display random affirmation and Bible verse on page load
-    displayRandomAffirmation();
-    displayRandomBibleVerse();
-</script>
+        function playRewardAnimation() {
+            // Add your animation logic here
+            alert("Nice! It may seem silly, but it helps.");
+        }
+
+        function displayRandomBibleVerse() {
+            const randomIndex = Math.floor(Math.random() * bibleVerses.length);
+            const bibleVerseElement = document.getElementById('bibleVerse');
+            bibleVerseElement.textContent = bibleVerses[randomIndex];
+        }
+
+        // Display random affirmation and Bible verse on page load
+        displayRandomAffirmation();
+        displayRandomBibleVerse();
+    </script>
 
     <!-- Divider -->
     <hr class="divider">
-
-    <!-- Bible Verse Container -->
-    <div id="bibleVerseContainer">
-        <p id="bibleVerse"></p>
-    </div>
-
-    <div class="button-container">
-        <button id="bibleVerseButton" onclick="displayRandomBibleVerse()">
-           More Verses
-        </button>
-    </div>
 </body>
 </html>
