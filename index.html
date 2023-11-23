@@ -100,43 +100,48 @@
     "Behold, children are a heritage from the Lord, the fruit of the womb a reward. - Psalm 127:3"
         ];
 
-        let affirmationCounter = 0;
+    let affirmationCounter = 0;
 
-        function displayRandomAffirmation() {
-            const randomIndex = Math.floor(Math.random() * affirmations.length);
-            const affirmationElement = document.getElementById('affirmation');
-            affirmationElement.textContent = affirmations[randomIndex];
-        }
+    function displayRandomAffirmation() {
+        const randomIndex = Math.floor(Math.random() * affirmations.length);
+        const affirmationElement = document.getElementById('affirmation');
+        affirmationElement.textContent = affirmations[randomIndex];
+    }
 
-        function handleReRollButtonClick() {
-            // Reroll without affecting the affirmation counter
-            displayRandomAffirmation();
-        }
-
-        function handleAffirmationButtonClick() {
-            affirmationCounter++;
-
-            if (affirmationCounter >= 5) {
-                playRewardAnimation();
-                affirmationCounter = 0; // Reset the counter after the reward
-            }
-        }
-
-        function playRewardAnimation() {
-            // Add your animation logic here
-            alert("Nice! It may seem silly, but it helps.");
-        }
-
-        function displayRandomBibleVerse() {
-            const randomIndex = Math.floor(Math.random() * bibleVerses.length);
-            const bibleVerseElement = document.getElementById('bibleVerse');
-            bibleVerseElement.textContent = bibleVerses[randomIndex];
-        }
-
-        // Display random affirmation and Bible verse on page load
+    function handleReRollButtonClick() {
+        // Reroll without affecting the affirmation counter
         displayRandomAffirmation();
-        displayRandomBibleVerse();
-    </script>
+    }
+
+    function handleAffirmationButtonClick() {
+        affirmationCounter++;
+
+        if (affirmationCounter >= 5) {
+            playRewardAnimation();
+            affirmationCounter = 0; // Reset the counter after the reward
+        }
+    }
+
+    function playRewardAnimation() {
+        // Add your animation logic here
+        alert("Nice! It may seem silly, but it helps.");
+    }
+
+    function displayRandomBibleVerse() {
+        const randomIndex = Math.floor(Math.random() * bibleVerses.length);
+        const bibleVerseElement = document.getElementById('bibleVerse');
+        bibleVerseElement.textContent = bibleVerses[randomIndex];
+    }
+
+    // Display random affirmation and Bible verse on page load
+    displayRandomAffirmation();
+    displayRandomBibleVerse();
+
+    // Change the background image
+    const bodyElement = document.body;
+    const randomImageIndex = Math.floor(Math.random() * backgroundImages.length);
+    bodyElement.style.backgroundImage = `url('images/${backgroundImages[randomImageIndex]}')`;
+</script>
 
     <!-- Divider -->
     <hr class="divider">
