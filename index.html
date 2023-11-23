@@ -117,11 +117,16 @@ const bibleVerses = [
         alert("Nice! It may seem silly, but it helps.");
     }
 
-    function displayRandomBibleVerse() {
-        const randomIndex = Math.floor(Math.random() * bibleVerses.length);
-        const bibleVerseElement = document.getElementById('bibleVerse');
-        bibleVerseElement.textContent = bibleVerses[randomIndex];
-    }
+   function displayRandomAffirmation() {
+    const randomIndex = Math.floor(Math.random() * affirmations.length);
+    const affirmationElement = document.getElementById('affirmation');
+    affirmationElement.textContent = affirmations[randomIndex];
+
+    // Change the background image
+    const bodyElement = document.body;
+    const randomImageIndex = Math.floor(Math.random() * backgroundImages.length);
+    bodyElement.style.backgroundImage = `url('images/${backgroundImages[randomImageIndex]}')`;
+}
 
     // Display random affirmation and Bible verse on page load
     displayRandomAffirmation();
