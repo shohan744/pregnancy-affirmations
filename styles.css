@@ -19,7 +19,8 @@ h1 {
     text-align: center; /* Center the text */
 }
 
-#affirmationContainer {
+#affirmationContainer,
+#bibleVerseContainer {
     background-color: #f2f2f2; /* Light gray background */
     padding: 20px;
     border-radius: 10px;
@@ -27,7 +28,8 @@ h1 {
     margin-bottom: 20px;
 }
 
-p#affirmation {
+p#affirmation,
+p#bibleVerse {
     font-size: 18px;
     margin: 0; /* Remove default margin */
     text-align: center;
@@ -35,6 +37,7 @@ p#affirmation {
 
 .button-container {
     margin-top: 20px;
+    text-align: center; /* Center the buttons */
 }
 
 button {
@@ -57,28 +60,10 @@ button:hover {
     margin-left: 5px;
 }
 
-/* styles.css */
-
-/* Existing styles... */
-
 .divider {
-    width: 100%;
+    width: 50%; /* Adjust the width as needed */
     border: 1px solid #ccc; /* Light gray border */
-    margin: 20px 0; /* Add some margin above and below the divider */
-}
-
-#bibleVerseContainer {
-    background-color: #f2f2f2; /* Light gray background */
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle box shadow */
-    margin-bottom: 20px;
-}
-
-p#bibleVerse {
-    font-size: 18px;
-    margin: 0; /* Remove default margin */
-    text-align: center;
+    margin: 20px auto; /* Center the divider and add margin */
 }
 
 #bibleVerseButton {
@@ -95,4 +80,3 @@ p#bibleVerse {
 #bibleVerseButton:hover {
     background-color: #005180; /* Slightly darker blue on hover */
 }
-
