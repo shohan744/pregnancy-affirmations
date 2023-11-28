@@ -15,9 +15,10 @@ body {
 h1 {
     color: #007acc; /* Dark blue */
     font-size: 2em;
-    margin-bottom: 10px;
+    margin-bottom: 25px;
     text-align: center; /* Center the text */
 }
+
 
 #affirmationContainer,
 #bibleVerseContainer {
