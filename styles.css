@@ -88,17 +88,18 @@ button:hover {
 }
 
 #exercisesContainer {
-    text-align: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow */
 }
 
 #exercisesContainer h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
+    color: #333; /* Optional: Customize text color */
 }
 
 #exercisesContainer p {
-    font-size: 16px;
-    margin-bottom: 20px;
+    color: #555; /* Optional: Customize text color */
 }
 
 #exercisesContainer ul {
@@ -107,6 +108,5 @@ button:hover {
 }
 
 #exercisesContainer li {
-    font-size: 14px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
