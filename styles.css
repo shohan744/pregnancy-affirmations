@@ -80,3 +80,33 @@ button:hover {
 #bibleVerseButton:hover {
     background-color: #005180; /* Slightly darker blue on hover */
 }
+
+.divider-exercises {
+    width: 70%; /* Adjust the width as needed */
+    margin: 20px auto; /* Center the divider and add margin */
+    border-top: 2px solid #ccc; /* Adjust the border color and thickness as needed */
+}
+
+#exercisesContainer {
+    text-align: center;
+}
+
+#exercisesContainer h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+#exercisesContainer p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+#exercisesContainer ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#exercisesContainer li {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
