@@ -38,6 +38,7 @@ p#bibleVerse {
 .button-container {
     margin-top: 20px;
     text-align: center; /* Center the buttons */
+}
     
 button {
     background-color: #007acc; /* Dark blue */
