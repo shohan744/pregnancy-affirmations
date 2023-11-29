@@ -14,11 +14,10 @@ body {
 
 h1 {
     color: #007acc; /* Dark blue */
-    font-size: 3em;
+    font-size: 2.5em; /* Adjust font size for smaller screens */
     margin: 20px 0; /* Add margin to the top and bottom */
     text-align: center; /* Center the text */
 }
-
 
 #affirmationContainer,
 #bibleVerseContainer {
@@ -26,12 +25,12 @@ h1 {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle box shadow */
-    margin-bottom: 20px;
+    margin: 20px; /* Add margin on all sides */
 }
 
 p#affirmation,
 p#bibleVerse {
-    font-size: 18px;
+    font-size: 16px; /* Adjust font size for smaller screens */
     margin: 0; /* Remove default margin */
     text-align: center;
 }
@@ -42,50 +41,13 @@ p#bibleVerse {
 }
 
 button {
-    background-color: #007acc; /* Dark blue */
-    color: #fff; /* White text color */
-    font-size: 16px;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    margin: 5px; /* Add some margin between buttons */
+    font-size: 14px; /* Adjust font size for smaller screens */
 }
 
-button:hover {
-    background-color: #005180; /* Slightly darker blue on hover */
-}
-
-#reRollButton span {
-    font-size: 18px;
-    margin-left: 5px;
-}
-
-.divider {
-    width: 50%; /* Adjust the width as needed */
-    border: 1px solid #ccc; /* Light gray border */
-    margin: 20px auto; /* Center the divider and add margin */
-}
-
-#bibleVerseButton {
-    background-color: #007acc; /* Dark blue */
-    color: #fff; /* White text color */
-    font-size: 16px;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    margin: 5px; /* Add some margin between buttons */
-}
-
-#bibleVerseButton:hover {
-    background-color: #005180; /* Slightly darker blue on hover */
-}
-
+.divider,
 .divider-exercises {
-    width: 70%; /* Adjust the width as needed */
+    width: 80%; /* Adjust the width for smaller screens */
     margin: 20px auto; /* Center the divider and add margin */
-    border-top: 2px solid #ccc; /* Adjust the border color and thickness as needed */
 }
 
 #exercisesContainer {
@@ -93,6 +55,8 @@ button:hover {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow */
+    margin: 20px; /* Add margin on all sides */
+    margin-bottom: 50px; /* Add some bottom margin to separate from the end of the page */
 }
 
 #exercisesContainer h2 {
