@@ -8,8 +8,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    height: 100vh;
+    justify-content: flex-start;
+    min-height: 100vh;
 }
 
 h1 {
@@ -17,6 +17,12 @@ h1 {
     font-size: 2.5em; /* Adjust font size for smaller screens */
     margin: 20px 0; /* Add margin to the top and bottom */
     text-align: center; /* Center the text */
+    margin-top: 20px;
+}
+
+h2,
+h3 {
+  text-align: center;
 }
 
 #affirmationContainer,
@@ -67,7 +73,7 @@ button:hover {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow */
-    margin: 20px; /* Add margin on all sides */
+    margin: 60px; /* Add margin on all sides */
     margin-bottom: 50px; /* Add some bottom margin to separate from the end of the page */
 }
 
