@@ -88,10 +88,17 @@ const affirmations = [
       }
     }
 
-    function playRewardAnimation() {
-      // Add your animation logic here
-      alert("Nice! It may seem silly, but it helps.");
-    }
+function playRewardAnimation() {
+    // Start the confetti animation
+    confetti({
+        particleCount: 100,
+        spread: 70,
+        origin: { y: 0.6 }
+    });
+
+    // Existing alert
+    alert("Nice! It may seem silly, but it helps.");
+}
 
     function displayRandomBibleVerse() {
       const randomIndex = Math.floor(Math.random() * bibleVerses.length);
