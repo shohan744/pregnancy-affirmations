@@ -93,10 +93,12 @@ function playRewardAnimation() {
     confetti({
         particleCount: 100,
         spread: 70,
-        origin: { y: 0.6 }
+        origin: { y: 0.6 },
+        colors: ['#ffc0cb', '#008080', '#ffa07a'], // Replace these with the actual colors from your image
+        scalar: 1.5 // This increases the size of the confetti
     });
 
-    // Existing alert
+    // Your existing code
     alert("Nice! It may seem silly, but it helps.");
 }
 
