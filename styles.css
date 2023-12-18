@@ -65,17 +65,28 @@ button:hover {
     
 .divider,
 .divider-exercises {
-    width: 80%; /* Adjust the width for smaller screens */
+    width: 40%; /* Adjust the width for smaller screens */
     margin: 20px auto; /* Center the divider and add margin */
 }
 
 #exercisesContainer {
     background-color: white;
-    padding: 20px;
+    padding: 15px; /* Reduced padding */
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow */
-    margin: 60px; /* Add margin on all sides */
-    margin-bottom: 50px; /* Add some bottom margin to separate from the end of the page */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 40px; /* Reduced margin */
+    width: 70%; /* Smaller width */
+    max-width: 600px; /* Maximum width for large screens */
+    box-sizing: border-box; /* Ensure padding and border are included in the width */
+}
+
+#exercisesContainer h2,
+#exercisesContainer p,
+#exercisesContainer li {
+    max-width: 550px; /* Maximum width for text elements */
+    margin-left: auto;
+    margin-right: auto; /* This centers the text blocks if the container is wider */
+    text-align: left; /* Align text to the left for better readability */
 }
 
 #exercisesContainer h2 {
