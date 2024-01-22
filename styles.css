@@ -10,91 +10,85 @@ body {
     align-items: center;
     justify-content: flex-start;
     min-height: 100vh;
+    color: #333; /* Primary text color for the body */
+}
+
+h1, h2, h3 {
+    color: #007acc; /* Dark blue for all headings */
+    margin-top: 20px;
+    text-align: center; 
 }
 
 h1 {
-    color: #007acc; /* Dark blue */
-    font-size: 2.5em; /* Adjust font size for smaller screens */
-    margin: 20px 0; /* Add margin to the top and bottom */
-    text-align: center; /* Center the text */
-    margin-top: 20px;
+    font-size: 2.5em; 
+    margin: 20px 0; 
 }
 
-h2,
-h3,
-p {
-  text-align: center;
+h2, h3, p {
+    text-align: center;
 }
 
 #affirmationContainer,
 #bibleVerseContainer {
-    background-color: #f2f2f2; /* Light gray background */
+    background-color: #f2f2f2; 
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle box shadow */
-    margin: 20px; /* Add margin on all sides */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    margin: 20px; 
 }
 
 p#affirmation,
 p#bibleVerse {
-    font-size: 16px; /* Adjust font size for smaller screens */
-    margin: 0; /* Remove default margin */
-    text-align: center;
+    font-size: 16px;
+    margin: 0;
 }
 
 .button-container {
     margin-top: 20px;
-    text-align: center; /* Center the buttons */
+    text-align: center;
 }
     
 button {
-    background-color: #007acc; /* Dark blue */
-    color: #fff; /* White text color */
-    font-size: 14px; /* Adjust font size for smaller screens */
+    background-color: #007acc; 
+    color: #fff; 
+    font-size: 14px; 
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    margin: 5px; /* Add some margin between buttons */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a slight box shadow */
+    margin: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 button:hover {
-    background-color: #005180; /* Slightly darker blue on hover */
+    background-color: #005180;
 }
     
 .divider,
 .divider-exercises {
-    width: 40%; /* Adjust the width for smaller screens */
-    margin: 20px auto; /* Center the divider and add margin */
+    width: 40%;
+    margin: 20px auto;
 }
 
 #exercisesContainer {
     background-color: white;
-    padding: 15px; /* Reduced padding */
+    padding: 15px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin: 40px; /* Reduced margin */
-    width: 70%; /* Smaller width */
-    max-width: 600px; /* Maximum width for large screens */
-    box-sizing: border-box; /* Ensure padding and border are included in the width */
+    margin: 40px;
+    width: 70%;
+    max-width: 600px;
+    box-sizing: border-box;
 }
 
 #exercisesContainer h2,
 #exercisesContainer p,
 #exercisesContainer li {
-    max-width: 550px; /* Maximum width for text elements */
+    color: #333; /* Unified text color */
+    max-width: 550px;
     margin-left: auto;
-    margin-right: auto; /* This centers the text blocks if the container is wider */
-    text-align: left; /* Align text to the left for better readability */
-}
-
-#exercisesContainer h2 {
-    color: #333; /* Optional: Customize text color */
-}
-
-#exercisesContainer p {
-    color: #555; /* Optional: Customize text color */
+    margin-right: auto;
+    text-align: left;
 }
 
 #exercisesContainer ul {
@@ -110,5 +104,25 @@ button:hover {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 25%; /* Adjust the width as necessary */
+    width: 25%;
 }
+
+.centered-heading {
+    text-align: center;
+}
+
+.banner {
+    background-color: #f8f8f8;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.banner a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #333; /* Consistent text color for links */
+}
+
+/* Other styles... */
+
+
